@@ -4,7 +4,7 @@ const buttonNo = document.querySelector('.button-no');
 
 // Passo 2: Definir a data de início do namoro
 // IMPORTANTE: Mude essa data para a data de início real do casal
-const startDate = new Date('YYYY-MM-DD'); // Exemplo: new Date('2023-08-15')
+const startDate = new Date('2024-07-02'); // Exemplo: new Date('2023-08-15')
 
 // Passo 3: Fazer o contador funcionar em tempo real
 function updateTime() {
