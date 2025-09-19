@@ -41,5 +41,41 @@
     </main>
 
     <script src="script.js"></script>
+
+    <script>
+        // Passo 1: Encontrar os botões e a seção do vídeo no HTML
+const buttonYes = document.querySelector('.button-yes');
+const buttonContainer = document.querySelector('.button-container');
+const videoSection = document.getElementById('video-section');
+
+// Passo 2: Adicionar a função ao botão "Sim"
+buttonYes.onclick = () => {
+    // 2.1: Fazer os botões desaparecerem
+    buttonContainer.style.display = 'none';
+
+    // 2.2: Criar o vídeo
+    const videoHTML = `
+        <iframe width="100%" height="450" 
+            src="https://www.youtube.com/embed/YOUR_VIDEO_ID" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+        </iframe>
+    `;
+
+    // 2.3: Colocar o vídeo na seção e mostrar a seção
+    videoSection.innerHTML = videoHTML;
+    videoSection.style.display = 'block';
+};
+
+// Passo 3: Colocar a URL do seu vídeo
+// IMPORTANTE: Mude a URL "https://www.youtube.com/embed/YOUR_VIDEO_ID"
+// para a URL do seu próprio vídeo do YouTube.
+// Por exemplo: se o link do seu vídeo é https://www.youtube.com/watch?v=12345,
+// você usará https://www.youtube.com/embed/12345
+
+
+    </script>
+    
 </body>
 </html>
