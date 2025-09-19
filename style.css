@@ -104,3 +104,32 @@ section {
     gap: 15px;
     flex-wrap: wrap;
 }
+/* Estilo da galeria */
+#gallery-section {
+    margin-top: 50px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.photo-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.photo-container img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover; /* Para as fotos não ficarem esticadas */
+    border-radius: 10px;
+    border: 2px solid #ff6f61;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.photo-container img:hover {
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+}
